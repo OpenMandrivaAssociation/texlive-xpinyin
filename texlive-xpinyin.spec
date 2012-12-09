@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-xpinyin
 Version:	1.1
-Release:	3
+Release:	2
 Summary:	Automatically add pinyin to Chinese characters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xpinyin
@@ -51,3 +51,15 @@ characters.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Sun Sep 16 2012 Andrey Bondrov <abondrov@mandriva.org> 1.1-2
++ Revision: 816978
+- Rebuild for missing packages
+
+* Fri Aug 10 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
++ Revision: 813866
+- Import texlive-xpinyin
+- Import texlive-xpinyin
+
