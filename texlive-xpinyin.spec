@@ -1,11 +1,11 @@
-# revision 31465
+# revision 32142
 # category Package
 # catalog-ctan /macros/latex/contrib/xpinyin
-# catalog-date 2013-08-18 10:00:53 +0200
+# catalog-date 2013-11-12 08:22:43 +0100
 # catalog-license lppl1.3
-# catalog-version 1.4
+# catalog-version 1.5
 Name:		texlive-xpinyin
-Version:	1.4
+Version:	1.5
 Release:	1
 Summary:	Automatically add pinyin to Chinese characters
 Group:		Publishing
@@ -34,6 +34,7 @@ characters.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/latex/xpinyin/config/xpinyin-UGBK.cfg
 %{_texmfdistdir}/tex/latex/xpinyin/config/xpinyin-map.cfg
 %{_texmfdistdir}/tex/latex/xpinyin/xpinyin.sty
 %doc %{_texmfdistdir}/doc/latex/xpinyin/README
