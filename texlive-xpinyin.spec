@@ -1,5 +1,5 @@
 Name:		texlive-xpinyin
-Version:	2.5
+Version:	2.6
 Release:	1
 Summary:	Automatically add pinyin to Chinese characters
 Group:		Publishing
