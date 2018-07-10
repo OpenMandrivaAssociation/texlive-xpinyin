@@ -1,6 +1,6 @@
 Name:		texlive-xpinyin
 Version:	2.6
-Release:	1
+Release:	2
 Summary:	Automatically add pinyin to Chinese characters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xpinyin
