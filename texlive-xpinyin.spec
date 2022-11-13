@@ -1,13 +1,13 @@
 Name:		texlive-xpinyin
-Version:	2.7
+Version:	63897
 Release:	1
 Summary:	Automatically add pinyin to Chinese characters
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xpinyin
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xpinyin.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xpinyin.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xpinyin.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xpinyin.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xpinyin.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xpinyin.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ Macros are provided that automatically add pinyin to Chinese
 characters.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -35,7 +35,8 @@ characters.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
